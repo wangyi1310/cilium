@@ -632,7 +632,7 @@
     "matchers/support/goraph/util",
     "types"
   ]
-  revision = "283ed655c6b8238afecd5bea6434bc9b03129f2f"
+  revision = "v1.4.0"
 
 [[projects]]
   name = "github.com/op/go-logging"
@@ -1203,6 +1203,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "f89774f1fa4b9add3e28ecafdacb071facdcba52b4daaad38a9e61375e0ddc02"
+  inputs-digest = "c068f31d6f0bf72dff49d382b32da437df99fb5739d34802255093529ef237a4"
   solver-name = "gps-cdcl"
   solver-version = 1
