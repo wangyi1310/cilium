@@ -47,6 +47,14 @@
   revision = "0010a05ce49fde7f50669bc7ecda7d41dd6ab824"
 
 [[projects]]
+  name = "github.com/cilium/go-bindata"
+  packages = [
+    ".",
+    "go-bindata"
+  ]
+  revision = "e950ad39c6092155a6d89f04c90b1c46d8c97d49"
+
+[[projects]]
   name = "github.com/containerd/containerd"
   packages = [
     ".",
