@@ -271,6 +271,7 @@ test-docs: docs-container
 install-cilium-golang-deps:
 	curl -SsL https://github.com/ksonnet/kubecfg/releases/download/v0.8.0/kubecfg-linux-amd64 > ../../../../bin/kubecfg && chmod +x ../../../../bin/kubecfg
 	go build -o ../../../../bin/protoc-gen-go vendor/github.com/golang/protobuf/protoc-gen-go/main.go
+	go build -o ../../../../bin/protoc-gen-validate vendor/github.com/lyft/protoc-gen-validate/main.go
 
 manpages:
 	-rm -r man
