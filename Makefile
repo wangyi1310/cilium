@@ -268,6 +268,9 @@ test-docs: docs-container
 	-docker container rm -f docs-cilium >/dev/null
 	docker container run --rm -v $$(pwd):/srv/ cilium/docs-builder /bin/bash -c 'make html'
 
+install-cilium-golang-deps:
+	curl -SsL https://github.com/ksonnet/kubecfg/releases/download/v0.8.0/kubecfg-linux-amd64 > ../../../../bin/kubecfg && chmod +x ../../../../bin/kubecfg
+
 manpages:
 	-rm -r man
 	mkdir -p man
