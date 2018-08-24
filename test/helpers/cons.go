@@ -162,10 +162,7 @@ const (
 	KubectlPolicyNameLabel      = k8sConst.PolicyLabelName
 	KubectlPolicyNameSpaceLabel = k8sConst.PolicyLabelNamespace
 
-	StableImage = "docker.io/cilium/cilium:v1.1.1"
-
-	configMap = "ConfigMap"
-	daemonSet = "DaemonSet"
+	CiliumStableVersion = "v1.1.4"
 
 	MonitorLogFileName = "monitor.log"
 	microscopeManifest = "microscope.yaml"
