@@ -162,7 +162,7 @@ const (
 	KubectlPolicyNameLabel      = k8sConst.PolicyLabelName
 	KubectlPolicyNameSpaceLabel = k8sConst.PolicyLabelNamespace
 
-	CiliumStableVersion = "v1.1.4"
+	CiliumStableVersion = "v1.1"
 
 	MonitorLogFileName = "monitor.log"
 	microscopeManifest = "microscope.yaml"
@@ -199,7 +199,7 @@ const (
 )
 
 // NightlyStableUpgradesFrom the cilium images to update from in Nightly test.
-var NightlyStableUpgradesFrom = []string{"docker.io/cilium/cilium:v1.0.5"}
+var NightlyStableUpgradesFrom = []string{"docker.io/cilium/cilium:v1.0"}
 
 // CiliumDefaultDSPatch is the default Cilium DaemonSet patch to be used in all tests.
 const CiliumDefaultDSPatch = "cilium-ds-patch.yaml"
