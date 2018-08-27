@@ -3,11 +3,11 @@ package main
 import (
 	"fmt"
 	"reflect"
-	"sync"
 
 	"github.com/cilium/cilium/pkg/envoy/cilium"
 	envoy_api_v2 "github.com/cilium/cilium/pkg/envoy/envoy/api/v2"
 	core "github.com/cilium/cilium/pkg/envoy/envoy/api/v2/core"
+	"github.com/cilium/cilium/pkg/lock"
 
 	"github.com/golang/protobuf/proto"
 
@@ -205,7 +205,7 @@ func (p *PolicyInstance) Matches(ingress bool, port, remoteId uint32, l7 interfa
 }
 
 type PolicyMap struct {
-	mutex    sync.RWMutex
+	mutex    lock.RWMutex
 	policies map[string]*PolicyInstance
 }
 
