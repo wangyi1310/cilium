@@ -4,6 +4,8 @@ import (
 	"testing"
 	"time"
 
+	_ "gopkg.in/check.v1"
+
 	"github.com/cilium/cilium/pkg/envoy/cilium"
 
 	envoy_api_v2 "github.com/cilium/cilium/pkg/envoy/envoy/api/v2"

@@ -147,7 +147,7 @@ go_filter.so go_filter.h: goparsers/*.go
 	go build -o go_filter.so -buildmode=c-shared $^
 
 gotests:
-	cd goparsers; go test
+	cd goparsers; go test -test.v -check.vv
 
 # Run tests using the fastbuild by default.
 tests: force-non-root go_filter.so go_filter.h gotests
